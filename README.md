@@ -32,6 +32,6 @@
  	 ⏰15：覆盖-画中画
 
 ## 🖼 界面参考
-  ![xfun-plan](https://user-images.githubusercontent.com/19167342/147642583-910e1d37-8d81-4f48-abcd-8d43abb04328.png)
+  ![xfunc-plan](https://user-images.githubusercontent.com/19167342/147646772-ebfe56a0-80f8-444f-bd7e-c03ff7de54fd.png)
 
 ## 🥂 期盼豪杰加入合作优化完善程序 ^_^
