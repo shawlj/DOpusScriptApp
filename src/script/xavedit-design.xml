@@ -1,0 +1,137 @@
+<resources>
+	<resource name="xffmpeg" type="dialog">
+		<dialog dragdrop="yes" fontsize="8" height="270" lang="english" width="358">
+			<control halign="left" height="8" name="static1" title="选择功能：" type="static" width="43" x="21" y="15" />
+			<control height="40" name="xfunc" type="combo" width="276" x="65" y="11">
+				<contents>
+					<item text="请选择功能" />
+					<item text="01 -&gt; 合并文件" />
+					<item text="02 -&gt; 添加音轨" />
+					<item text="03 -&gt; 提取音频流" />
+					<item text="04 -&gt; 提取视频流" />
+					<item text="05 -&gt; 提取字幕流" />
+					<item text="06 -&gt; 容器格式转换" />
+					<item text="07 -&gt; 调整分辨率" />
+					<item text="08 -&gt; 压缩视频-降码" />
+					<item text="09 -&gt; 添加字幕" />
+					<item text="10 -&gt; 添加水印" />
+					<item text="11 -&gt; 高斯模糊" />
+					<item text="12 -&gt; 截取视频" />
+					<item text="13 -&gt; 裁剪视频" />
+					<item text="14 -&gt; 旋转/翻转" />
+					<item text="15 -&gt; 填充视频" />
+				</contents>
+			</control>
+			<control halign="left" height="8" name="static2" title="输出目录：" type="static" width="43" x="21" y="35" />
+			<control halign="left" height="14" name="xoutput" tip="请选择或输入目录..." type="edit" width="240" x="65" y="32" />
+			<control height="15" name="xmodify" title="更 改" type="button" width="36" x="305" y="32" />
+			<control halign="left" height="8" name="static3" title="选择码率：" type="static" width="44" x="21" y="77" />
+			<control edit="yes" height="40" name="xdrate" type="combo" width="71" x="65" y="74">
+				<contents>
+					<item text="默认" />
+					<item text="2000kbps" />
+					<item text="2000kbps" />
+					<item text="3000kbps" />
+					<item text="4000kbps" />
+					<item text="5000kbps" />
+					<item text="6000kbps" />
+					<item text="7000kbps" />
+					<item text="8000kbps" />
+					<item text="9000kbps" />
+					<item text="10000kbps" />
+				</contents>
+			</control>
+			<control halign="left" height="8" name="static4" title="编码：" type="static" width="26" x="148" y="77" />
+			<control case="lower" edit="yes" height="40" name="xdcode" type="combo" width="56" x="174" y="74">
+				<contents>
+					<item text="默认" />
+					<item text="avi" />
+					<item text="MPEG-2" />
+					<item text="MPEG-4" />
+					<item text="H.264" />
+					<item text="H.265" />
+					<item text="VC-1" />
+					<item text="QuickTime(mov)" />
+					<item text="VP8" />
+					<item text="VP9" />
+					<item text="AVS" />
+					<item text="WMV" />
+					<item text="real" />
+					<item text="rmvb" />
+					<item text="DivX" />
+					<item text="Xvid" />
+				</contents>
+			</control>
+			<control halign="left" height="8" name="static5" title="分辨率：" type="static" width="35" x="238" y="77" />
+			<control edit="yes" height="40" name="xvga" type="combo" width="67" x="273" y="74">
+				<contents>
+					<item text="默认" />
+					<item text="1024*576" />
+					<item text="1280*720" />
+					<item text="1366*768" />
+					<item text="1600*900" />
+					<item text="1920*1080" />
+					<item text="2560*1440" />
+					<item text="3840*2160" />
+				</contents>
+			</control>
+			<control halign="left" height="8" name="static2" title="输出名称：" type="static" width="43" x="21" y="56" />
+			<control halign="left" height="14" name="xname" tip="请输入或获取文件名..." type="edit" width="239" x="65" y="53" />
+			<control height="15" name="xauto" title="生 成" type="button" width="36" x="305" y="53" />
+			<control height="51" multisel="yes" name="xfbox" type="listbox" width="284" x="20" y="115" />
+			<control height="14" name="xappend" title="添 加" type="button" width="36" x="305" y="115" />
+			<control height="14" name="xremove" title="移 除" type="button" width="36" x="305" y="134" />
+			<control height="14" name="xclear" title="清 空" type="button" width="36" x="305" y="153" />
+			<control height="60" name="group1" title="生成执行命令预览" type="group" width="321" x="19" y="175" />
+			<control halign="left" height="45" multiline="yes" name="xcmd" readonly="yes" type="edit" width="311" x="24" y="186" />
+			<control height="17" name="xexecute" title="执  行" type="button" width="54" x="96" y="245" />
+			<control close="0" height="17" title="退  出" type="button" width="54" x="204" y="245" />
+			<control halign="left" height="8" name="static6" title="编码方式：" type="static" width="44" x="21" y="98" />
+			<control halign="left" height="8" name="static7" title="格式：" type="static" width="26" x="147" y="98" />
+			<control case="lower" edit="yes" height="40" name="xformat" type="combo" width="56" x="174" y="95">
+				<contents>
+					<item text="默认" />
+					<item text=".aac" />
+					<item text=".mp3" />
+					<item text=".wav" />
+					<item text="------" />
+					<item text=".avi" />
+					<item text=".asf" />
+					<item text=".flv" />
+					<item text=".mp4" />
+					<item text=".mkv" />
+					<item text=".mpeg" />
+					<item text=".mpg" />
+					<item text=".mov" />
+					<item text=".rm" />
+					<item text=".rmvb" />
+					<item text=".wmv" />
+					<item text=".ts" />
+				</contents>
+			</control>
+			<control edit="yes" height="40" name="xcodec" type="combo" width="71" x="65" y="95">
+				<contents>
+					<item text="默认" />
+					<item text="CBR" />
+					<item text="VBR" />
+				</contents>
+			</control>
+			<control halign="left" height="8" name="static8" title="清晰度：" type="static" width="35" x="238" y="97" />
+			<control case="lower" edit="yes" height="40" name="xpre" type="combo" width="67" x="273" y="94">
+				<contents>
+					<item text="默认" />
+					<item text="ultrafast" />
+					<item text="superfast" />
+					<item text="veryfast" />
+					<item text="faster" />
+					<item text="fast" />
+					<item text="medium" />
+					<item text="slow" />
+					<item text="slower" />
+					<item text="veryslow" />
+					<item text="placebo" />
+				</contents>
+			</control>
+		</dialog>
+	</resource>
+</resources>
